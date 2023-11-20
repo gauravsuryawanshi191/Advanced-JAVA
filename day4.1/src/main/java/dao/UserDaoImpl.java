@@ -74,8 +74,8 @@ public class UserDaoImpl implements UserDao {
 		pst4.setDate(5, dob);
 		pst4.setBoolean(6, false);
 		pst4.setString(7, "voter");
-		int status = pst4.executeUpdate();
-		return 0;
+		return  pst4.executeUpdate();
+		
 	}
 
 	// clean up

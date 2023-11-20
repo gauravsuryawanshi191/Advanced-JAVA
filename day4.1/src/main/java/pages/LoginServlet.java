@@ -10,6 +10,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import dao.UserDaoImpl;
 import pojos.User;
@@ -61,6 +62,8 @@ public class LoginServlet extends HttpServlet {
 				pw.print("<h4> Invalid Login <br>Please <a href='login.html'>Retry</a></h4>");
 			else {
 				pw.print("<h4>Successful Login , User Details " + user + "</h4>");
+				HttpSession session= request.getSession();
+				session.setAttribute("user_details", user);
 				if (user.getRole().equals("admin"))
 					response.sendRedirect("admin_page");
 				else {
