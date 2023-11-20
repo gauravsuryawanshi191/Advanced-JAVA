@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IPL</title>
+</head>
+<body>
+	<form action="player_register" method="post"
+		style="padding-left: 40% ">
+		<table border="2">
+			<tr>
+				<td>Choose a Team:</td>
+				<td><select name="team_id" id="team">
+						<option value="1">CSK</option>
+						<option value="2">GT</option>
+						<option value="3">KKR</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>First Name:</td>
+				<td><input name="f_name" type="text" placeholder="first name"></td>
+			</tr>
+			<tr>
+				<td>Last Name:</td>
+				<td><input name="l_name" type="text" placeholder="first name"></td>
+			</tr>
+			<tr>
+				<td>Date of Birth</td>
+				<td><input name="dob" type="date"></td>
+			</tr>
+			<tr>
+				<td>Batting Average:</td>
+				<td><input name="bat_avg" type="text"></td>
+			</tr>
+			<tr>
+				<td>Wickets Taken:</td>
+				<td><input name="wkt_taken" type="number"></td>
+			</tr>
+		</table>
+		<input type="submit" name="submit" value="Add Player">
+	</form>
+</body>
+</html>
