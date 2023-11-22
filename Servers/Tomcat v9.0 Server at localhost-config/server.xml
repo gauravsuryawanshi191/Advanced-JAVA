@@ -105,8 +105,10 @@
 				<Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
 
+
+
 				
-			<Context docBase="day6.2" path="/day6.2" reloadable="true" source="org.eclipse.jst.jee.server:day6.2"/></Host>
+			<Context docBase="day7.1" path="/day7.1" reloadable="true" source="org.eclipse.jst.jee.server:day7.1"/></Host>
 		</Engine>
 	</Service>
 </Server>
