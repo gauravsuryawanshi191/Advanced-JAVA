@@ -108,7 +108,7 @@
 
 
 				
-			<Context docBase="day7.1" path="/day7.1" reloadable="true" source="org.eclipse.jst.jee.server:day7.1"/></Host>
+			</Host>
 		</Engine>
 	</Service>
 </Server>
