@@ -108,7 +108,7 @@
 
 
 				
-			</Host>
+			<Context docBase="IPL_webapp_hibernate" path="/IPL_webapp_Hibernate" reloadable="true" source="org.eclipse.jst.jee.server:IPL_webapp_hibernate"/></Host>
 		</Engine>
 	</Service>
 </Server>
